@@ -31,11 +31,11 @@ main {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	padding: 0 4rem;
 }
 
 main .about {
+	padding-top: 6rem;
 	height: 100%;
 	font-family: cursive;
 }
@@ -89,6 +89,11 @@ footer {
 	main {
 		flex-direction: column;
 		padding: 4rem 0;
+		align-items: center;
+	}
+
+	main .about {
+		padding-top: 0;
 	}
 
 	footer {
