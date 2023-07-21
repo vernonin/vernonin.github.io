@@ -1,0 +1,99 @@
+@import url('https://fonts.font.im/css?family=Gochi+Hand|Pangolin');
+
+@font-face {
+  font-family: "阿里妈妈刀隶体 Regular";
+	font-weight: 400;
+	src: url("./fonts/HanChengBoBoXingJian/HanChengBoBoXingJian-2.ttf") format("ttf"),
+  		 url("./fonts/HanChengBoBoXingJian/HanChengBoBoXingJian-2.ttf") format("woff");
+  font-display: swap;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 14px;
+}
+body {
+	width: 100vw;
+	min-height: 100vh;
+	position: relative;
+	color: #fff;
+	background-color: #a61b29;
+}
+
+main {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 4rem;
+}
+
+main .about {
+	height: 100%;
+	font-family: cursive;
+}
+
+main .about h2 {
+	font-size: 3rem;
+}
+main .about p {
+	font-size: 1.6rem;
+}
+
+main .about .contact {
+	display: flex;
+	gap: 0.88rem;
+	margin-top: 1.8rem;
+	font-size: 1.2rem;
+	font-family: 'Pangolin', cursive;
+}
+
+main .poetry {
+	font-family: "阿里妈妈刀隶体 Regular";
+	writing-mode: vertical-lr;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+
+	-webkit-text-stroke: 0.04rem #fa6c5956;
+}
+main .poetry h2 {
+	font-size: 4rem;
+}
+
+main .poetry .author {
+	font-size: 1.2rem;
+}
+main .poetry p {
+	font-size: 1.9rem;
+}
+footer {
+	position: absolute;
+	bottom: 8px;
+	left: 25%;
+
+	color: #eee;
+	font-size: 14px;
+	transform: translateX(-50%);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px) {
+	main {
+		flex-direction: column;
+		padding: 4rem 0;
+	}
+
+	footer {
+		left: 50%;
+		width: 100%;
+		text-align: center;
+	}
+}
