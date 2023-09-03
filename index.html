@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/ai.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>聊天助手</title>
-    <style>
-      .loading-container {
-        width: 100%;
-        height: 100%;
-        position:fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        background-color: whitesmoke;
-        transition: 0.2s ease-in;
-        transition-property: background-color;
-      }
-      .progress {
-        width: 120px;
-        height: 20px;
-        -webkit-mask: linear-gradient(90deg,#13227a 70%,#0000 0) 0/20%;
-        background: linear-gradient(#13227a 0 0) 0/0% no-repeat #ddd;
-        animation: p4 2s infinite steps(6);
-      }
-      @keyframes p4 {
-          100% { background-size: 120% }
-      }
-      .spinner {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-      }
-      
-    </style>
-    <script type="module" crossorigin src="/assets/index-d3975cc7.js"></script>
-    <link rel="stylesheet" href="/assets/index-91eb24db.css">
-  </head>
-  <body>
-    <div id="root">
-      <!-- 防止首次加载是出现长时间白屏 -->
-      <div class="loading-container">
-        <div class="progress spinner"></div>
-      </div>
-    </div>
-    
-  </body>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>黄琳-个人网站</title>
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="shortcut icon" href="./-network-.png" type="image/x-icon">
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<main>
+		<section class="about">
+			<h2>你好，</h2>
+			<p>很高兴认识你！</p>
+			<ul class="contact">
+				<li>微信: auin244</li>
+				<li>
+					<a target="_blank" href="https://github.com/vernonin">Github</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://blog.csdn.net/weixin_48165407?spm=1000.2115.3001.5343">CSND</a>
+				</li>
+				<li>
+					<a href="mailto:huanglin824@gmail.com">Email</a>
+				</li>
+				<li>
+					<a target="_blank" href="http://chat.huanglin.cc">AI聊天</a>
+				</li>
+			</ul>
+		</section>
+		<section class="poetry">
+			<h2>行路难·其一</h2>
+			<p class="author">李白</p>
+			<p>金樽清酒斗十千，玉盘珍羞直万钱。</p>
+			<p>停杯投箸不能食，拔剑四顾心茫然。</p>
+			<p>欲渡黄河冰塞川，将登太行雪满山。</p>
+			<p>闲来垂钓碧溪上，忽复乘舟梦日边。</p>
+			<p>行路难，行路难，多歧路，今安在？</p>
+			<p>长风破浪会有时，直挂云帆济沧海。</p>
+		</section>
+	</main>
+	<footer>
+		<span>备案号：</span>
+		<a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">桂ICP备2023005649号-1</a>
+	</footer>
+</body>
 </html>
